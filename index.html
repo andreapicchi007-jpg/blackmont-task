@@ -16,6 +16,7 @@
    LAYOUT: header con logo, barra di stato, composer (solo admin), filtri, lista; una colonna su mobile. */
 :root{color-scheme:dark;--bg:#060b18;--bg2:#0b1430;--glass:rgba(150,180,230,.06);--line:rgba(201,211,227,.14);--ink:#e8eef8;--mute:#8d9bb4;--silver:#c9d3e3;--blue:#3d8bff;--blue2:#7fb2ff;--ok:#43d6a0;--warn:#ffb547;--hot:#ff5d73}
 *{box-sizing:border-box;min-width:0}
+[hidden]{display:none!important}
 body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#14306e 0,transparent 60%),radial-gradient(900px 500px at -10% 10%,#0f2250 0,transparent 55%),var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;overflow-x:clip;min-height:100vh}
 body::before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.5),transparent 70%);opacity:.35}
 .wrap{position:relative;max-width:980px;margin:0 auto;padding:clamp(20px,4vw,48px) max(4vw,16px) 64px}
@@ -29,7 +30,7 @@ header{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:28p
 .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,2fr);gap:0;margin-bottom:18px;overflow:hidden}
 .stat{padding:16px 18px;border-right:1px solid var(--line)}
 .stat span{display:block;font-size:13px;color:var(--mute)}
-.stat strong{font:400 26px/1.2 Michroma,sans-serif;color:var(--silver)}
+.stat strong{font:600 28px/1.2 Inter,sans-serif;font-variant-numeric:tabular-nums;color:var(--silver)}
 .prog{padding:16px 18px;display:flex;flex-direction:column;justify-content:center;gap:10px}
 .prog span{font-size:13px;color:var(--mute);display:flex;justify-content:space-between}
 .bar{height:8px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden}
