@@ -1,5 +1,5 @@
 // Blackmont Broker Task — configurazione
-// Incolla qui i due valori presi da Supabase → Project Settings → API.
+// Inchttps://bfvhmuamauohqdpqqjjc.supabase.co/rest/v1/
 // Se li lasci vuoti il sito parte in modalità DEMO (task salvate solo nel browser).
 window.BLACKMONT_CONFIG = {
   SUPABASE_URL: "",       // es. "https://abcdefgh.supabase.co"
